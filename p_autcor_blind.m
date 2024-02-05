@@ -13,7 +13,7 @@ function [autc sp_re sp_im]=p_autcor_blind(t,T,dt)
 T= T*86400;
 
 n=length(t);            % nume di fotoni
-N=round(T/dt)           % numero di bin all'interno di un Tp
+N=round(T/dt);           % numero di bin all'interno di un Tp
 
 % modifica**************************
 % NFFT = 2^nextpow2(N);

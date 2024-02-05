@@ -15,7 +15,7 @@ function [p_dec_terra p_dec_sc t]=pos_detector_blind(t)
 % Version 2.0 - December 2009
 % Part of Snag toolbox - Signal and Noise for Gravitational Antennas
 % by Sergio Frasca - sergio.frasca@roma1.infn.it
-% Department of Physics - Universit� "Sapienza" - Rome
+% Department of Physics - Universit??? "Sapienza" - Rome
 
 
 
@@ -92,7 +92,7 @@ KMAU= 1.49597870691000015e+08;  % conversione Km-AU
 
 % terra_SSB=fopen('terra_ssb.txt','w');
 
-[t_terra t_jps x y z ]=textread('/storage/users/tringali/pss_astro/table.dat','%f\t %f\t %f\t %f\t %f\t');
+[t_terra t_jps x y z ]=textread('/media/cta/EXTERNAL_USB/Chandana_Work/Pulsar_analysis/table.dat','%f\t %f\t %f\t %f\t %f\t');
     
 x= x*KMAU;
 y= y*KMAU;
@@ -147,8 +147,8 @@ p_dec_terra(3,:)=spline(doptab_terra(1,:),doptab_terra(4,:),t);    % posizione z
    
 %fid=fopen('/storage/users/tringali/ANALISI_PULSAR/LISTE/list_spacecraft_mat.txt','r');
 
-fid=fopen('/storage/users/tringali/FERMI_FILES/LISTE/list_spacecraft_p6v11_reduced_mat.txt','r'); %  p6v11
-
+%fid=fopen('/storage/users/tringali/FERMI_FILES/LISTE/list_spacecraft_p6v11_reduced_mat.txt','r'); %  p6v11
+fid=fopen('/media/cta/EXTERNAL_USB/Chandana_Work/Fermi_files/2023/Spacecraft/mat_Spacecraft/list_spacecraft_2023_mat.txt','r'); %  p6v1
 
 %***************  BLOCCO DI DATI P7V6*****************************
 
